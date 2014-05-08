@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "ASP.NET MVC CLIENT Window";
+}
+
+<h2>Enter positive integer number:</h2>
+
+@using (Html.BeginForm("Index"))
+{
+    <input type="text" value=@ViewBag.Number name="NumberInput" />
+    <input type="submit" value="Check primality" />
+}
+<p />
+<h2>@ViewBag.Message</h2>
